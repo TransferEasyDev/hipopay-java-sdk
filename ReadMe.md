@@ -6,6 +6,7 @@
 * [官方网站](https://www.hipopay.com/)
 * [体验中心](https://www.hipopay.com/Demo/index)
 * [商务合作](https://www.hipopay.com/Home/cooperate)
+* [开发文档](https://www.hipopay.com/Document/newDoc?page=index)
 
 
 ## 结构
