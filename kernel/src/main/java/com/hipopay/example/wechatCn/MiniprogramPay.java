@@ -12,6 +12,7 @@ import java.util.List;
 public class MiniprogramPay {
     public static void main(String[] args) throws IOException {
         /*
+            'merchant_no' => 'your_merchant_no',         # 商户号 Y
             'out_trade_id' => 'your_trande_id',          # 商户交易流水号 Y
             'amount' => '1',                             # 支付单金额，单位为元，精度最多小数点后两位(如果是JPY和KRW，单位为分) Y
             'currency' => 'HKD',                         # 支付单结算币种
@@ -23,6 +24,7 @@ public class MiniprogramPay {
         */
 
         List<NameValuePair> params = new ArrayList<NameValuePair>();
+        params.add(new BasicNameValuePair("merchant_no", Tool.getMerchantNo()));
         params.add(new BasicNameValuePair("out_trade_id", "your_trade_id"));
         params.add(new BasicNameValuePair("amount", "100"));
         params.add(new BasicNameValuePair("currency", "HKD"));

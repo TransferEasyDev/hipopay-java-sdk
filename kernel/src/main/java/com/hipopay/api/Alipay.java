@@ -37,6 +37,12 @@ public class Alipay extends Base {
         req.requestPost();
     }
 
+    public void comsumerScanWeb(List<NameValuePair> params) throws IOException {
+        params = this.__isHK(params);
+        Request req = new Request("/alipay/web/payment", params);
+        req.requestPost();
+    }
+
     public void consumerScanMerchant(List<NameValuePair> params) throws IOException {
         params = this.__isHK(params);
         Request req = new Request("/alipay/qrcode/payment", params);
