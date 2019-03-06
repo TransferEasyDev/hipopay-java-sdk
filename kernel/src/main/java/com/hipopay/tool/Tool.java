@@ -50,4 +50,17 @@ public class Tool {
         return new String(keyBytes, "UTF-8");
 
     }
+
+    public static String getPublicKey() throws IOException {
+        Properties props = Tool.getProp();
+        String key_path = props.getProperty("PUBLIC_KEY_PATH");
+
+        FileInputStream inputStream = new FileInputStream(key_path);
+        byte[] keyBytes = new byte[inputStream.available()];
+        int i = inputStream.read(keyBytes);
+//        System.out.print(i);
+        inputStream.close();
+        return new String(keyBytes, "UTF-8");
+
+    }
 }
