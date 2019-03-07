@@ -43,12 +43,12 @@ public class Base {
     }
 
     public void refund(List<NameValuePair> params) throws IOException{
-        Request req = new Request("/refund", params);
+        Request req = new Request("/payment_refund", params);
         req.requestPost();
     }
 
     public void getRefund(List<NameValuePair> params) throws IOException {
-        Request req = new Request("/refund", params);
+        Request req = new Request("/payment_refund", params);
         req.requestGet();
     }
 }
