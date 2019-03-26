@@ -60,5 +60,10 @@ public class Alipay extends Base {
         req.requestGet();
     }
 
+    public void Declaration(List<NameValuePair> params) throws IOException {
+        Request req = new Request("/alipay/declaration", params);
+        req.requestPost();
+    }
+
 
 }
