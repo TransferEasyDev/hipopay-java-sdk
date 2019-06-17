@@ -33,8 +33,9 @@ public class Base {
         return params;
     }
 
-    public void getBill(List<NameValuePair> params) {
-        //TODO:
+    public void getBill(List<NameValuePair> params) throws IOException {
+        Request req = new Request("/download_bill", params);
+        req.requestGet();
     }
 
     public void getPayment(List<NameValuePair> params) throws IOException {
