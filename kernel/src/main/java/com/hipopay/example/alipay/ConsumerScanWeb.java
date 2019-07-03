@@ -15,7 +15,6 @@ public class ConsumerScanWeb {
             'out_trade_id'      # 商户交易流水号  Y
             'amount'            # 支付单金额，单位为元，精度最多小数点后两位(如果是JPY和KRW，单位为分) Y
             'currency'          # 结算币种 Y
-            'auth_code'         # 二维码内容 Y
             'product_info'      # 商品信息 Y
             'client_ip'         # 客户端设备IP地址 Y
             'notify_url'        # 异步通知地址  N
@@ -25,7 +24,6 @@ public class ConsumerScanWeb {
         params.add(new BasicNameValuePair("out_trade_id", "your_trade_id"));
         params.add(new BasicNameValuePair("amount", "100"));
         params.add(new BasicNameValuePair("currency", "HKD"));
-        params.add(new BasicNameValuePair("auth_code", ""));
         params.add(new BasicNameValuePair("product_info", "test product"));
         params.add(new BasicNameValuePair("client_ip", "0.0.0.0"));
         params.add(new BasicNameValuePair("notify_url", "your_notify_url"));
