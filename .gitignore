@@ -25,3 +25,10 @@ hs_err_pid*
 out
 .DS_Store
 private.key
+hipopay_prod_public.key
+pkcs8.pem
+freemarker.jar
+javax.ws.rs-api-2.1.1.jar
+MpPayServer.java
+statics/
+templates/

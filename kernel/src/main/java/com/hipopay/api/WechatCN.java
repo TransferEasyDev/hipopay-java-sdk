@@ -52,25 +52,21 @@ public class WechatCN extends Base {
     }
 
     public void getRate(List<NameValuePair> params) throws IOException {
-        params = this.__isCNY(params);
         Request req = new Request("/wechatpay/rate", params);
         req.requestGet();
     }
 
     public void declaration(List<NameValuePair> params) throws IOException {
-        params = this.__isCNY(params);
         Request req = new Request("/wechatpay/declaration", params);
         req.requestPost();
     }
 
     public void redeclaration(List<NameValuePair> params) throws IOException {
-        params = this.__isCNY(params);
         Request req = new Request("/wechatpay/redeclaration", params);
         req.requestPost();
     }
 
     public void getDeclaration(List<NameValuePair> params) throws IOException {
-        params = this.__isCNY(params);
         Request req = new Request("//wechatpay/declaration", params);
         req.requestGet();
     }
