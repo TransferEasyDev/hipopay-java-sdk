@@ -98,6 +98,7 @@ public class Request {
         String line = "";
         while ((line = rd.readLine()) != null) {
             result.append(line);
+            result.append('\n');
         }
         System.out.println("========response==============");
         System.out.println(result.toString());
