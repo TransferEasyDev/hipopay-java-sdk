@@ -1,4 +1,4 @@
-package main.java.com.hipopay.example.wechatCn;
+package main.java.com.hipopay.example.wechatHK;
 
 import main.java.com.hipopay.api.WechatHK;
 import main.java.com.hipopay.tool.Tool;
